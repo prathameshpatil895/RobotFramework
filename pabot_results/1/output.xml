@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-08-29T22:01:01.369465" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests">
+<suite id="s1-s1" name="Suite2" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite2.robot">
+<test id="s1-s1-t1" name="Sign Up with valid credentials" line="29">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:01.471537" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471418" elapsed="0.000152"/>
+</kw>
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2024-08-29T22:01:01.471732" level="INFO">Set test documentation to:
+doc TC1</msg>
+<arg>doc TC1</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471648" elapsed="0.000106"/>
+</kw>
+<kw name="Navigate to Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:01.472140" level="INFO">Opening browser 'firefox' to base url 'https://conduit.realworld.how/'.</msg>
+<arg>${PAGEURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.472011" elapsed="8.431742"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.904574" elapsed="0.472792"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:01.471857" elapsed="8.905679"/>
+</kw>
+<kw name="Sign Up to Website">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:10.378643" level="INFO">Clicking element '//a[text()=' Sign up ']'.</msg>
+<arg>//a[text()=' Sign up ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.378271" elapsed="0.250770"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder="Username"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.629205" elapsed="0.709331"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:11.338856" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@placeholder="Username"]'.</msg>
+<arg>xpath://input[@placeholder="Username"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:11.338667" elapsed="0.054973"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:11.393979" level="INFO">Typing text 'test456@testu.ai' into text field 'xpath://input[@placeholder="Email"]'.</msg>
+<arg>xpath://input[@placeholder="Email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:11.393771" elapsed="0.019299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:11.413361" level="INFO">Typing text 'secret_sauce' into text field 'xpath://input[@placeholder="Password"]'.</msg>
+<arg>xpath://input[@placeholder="Password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:11.413179" elapsed="0.017784"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:11.431228" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:11.431074" elapsed="0.221999"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${EMAIL}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-08-29T22:01:10.377866" elapsed="1.275358"/>
+</kw>
+<kw name="Get Window Titles" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:11.669102" level="INFO">Altogether 1 item.
+1: Conduit</msg>
+<doc>Returns and logs titles of all windows of the selected browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:11.653390" elapsed="0.015801"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:11.669330" elapsed="0.648053"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:12.317635" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:12.317513" elapsed="0.000146"/>
+</kw>
+<doc>doc TC1</doc>
+<status status="PASS" start="2024-08-29T22:01:01.470991" elapsed="10.846757"/>
+</test>
+<test id="s1-s1-t2" name="Second test Cases" line="39">
+<tag>robot:skip</tag>
+<status status="SKIP" start="2024-08-29T22:01:12.318278" elapsed="0.000232">Test skipped using 'robot:skip' tag.</status>
+</test>
+<test id="s1-s1-t3" name="Third Test Cases" line="43">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:12.318865" level="INFO">Great to know yourself</msg>
+<arg>Great to know yourself</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:12.318793" elapsed="0.000124"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:12.319036" level="INFO">message</msg>
+<arg>message</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:12.318978" elapsed="0.000083"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:12.318644" elapsed="0.000465"/>
+</test>
+<doc>My First Test suite for Robot framework
+This is Conitnued documnetation</doc>
+<status status="PASS" start="2024-08-29T22:01:01.382173" elapsed="10.937080"/>
+</suite>
+<status status="PASS" start="2024-08-29T22:01:01.375339" elapsed="10.944258"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="1" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="1" id="s1-s1" name="Suite2">Tests.Suite2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

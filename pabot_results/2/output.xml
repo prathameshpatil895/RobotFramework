@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-08-29T22:01:01.369465" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests">
+<suite id="s1-s1" name="Suite3" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite3.robot">
+<test id="s1-s1-t1" name="First TC" line="17">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471612" elapsed="0.000140"/>
+</kw>
+<var name="${counter}">0</var>
+<status status="PASS" start="2024-08-29T22:01:01.471311" elapsed="0.000485"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471911" elapsed="0.000096"/>
+</kw>
+<var name="${counter}">2</var>
+<status status="PASS" start="2024-08-29T22:01:01.471852" elapsed="0.000183"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.472132" elapsed="0.000081"/>
+</kw>
+<var name="${counter}">4</var>
+<status status="PASS" start="2024-08-29T22:01:01.472082" elapsed="0.000157"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.472393" elapsed="0.000122"/>
+</kw>
+<var name="${counter}">6</var>
+<status status="PASS" start="2024-08-29T22:01:01.472323" elapsed="0.000224"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.472651" elapsed="0.000084"/>
+</kw>
+<var name="${counter}">8</var>
+<status status="PASS" start="2024-08-29T22:01:01.472603" elapsed="0.000158"/>
+</iter>
+<var>${counter}</var>
+<value>0</value>
+<value>10</value>
+<value>2</value>
+<status status="PASS" start="2024-08-29T22:01:01.471143" elapsed="0.001641"/>
+</for>
+<status status="PASS" start="2024-08-29T22:01:01.470992" elapsed="0.001859"/>
+</test>
+<test id="s1-s1-t2" name="Second test Cases" line="23">
+<tag>robot:skip</tag>
+<status status="SKIP" start="2024-08-29T22:01:01.472979" elapsed="0.000280">Test skipped using 'robot:skip' tag.</status>
+</test>
+<test id="s1-s1-t3" name="Third Test Cases" line="27">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:01.473672" level="INFO">Great to know yourself</msg>
+<arg>Great to know yourself</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.473534" elapsed="0.000170"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.473943" elapsed="0.000145"/>
+</kw>
+<var name="${element}">Food</var>
+<status status="PASS" start="2024-08-29T22:01:01.473882" elapsed="0.000234"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.474227" elapsed="0.000201"/>
+</kw>
+<var name="${element}">Car</var>
+<status status="PASS" start="2024-08-29T22:01:01.474167" elapsed="0.000294"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.474567" elapsed="0.000091"/>
+</kw>
+<var name="${element}">House</var>
+<status status="PASS" start="2024-08-29T22:01:01.474516" elapsed="0.000166"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.474893" elapsed="0.000347"/>
+</kw>
+<var name="${element}">School</var>
+<status status="PASS" start="2024-08-29T22:01:01.474724" elapsed="0.000543"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.475355" elapsed="0.000081"/>
+</kw>
+<var name="${element}">Community</var>
+<status status="PASS" start="2024-08-29T22:01:01.475312" elapsed="0.000147"/>
+</iter>
+<var>${element}</var>
+<value>@{LIST_ITEMS}</value>
+<status status="PASS" start="2024-08-29T22:01:01.473782" elapsed="0.001698"/>
+</for>
+<status status="PASS" start="2024-08-29T22:01:01.473371" elapsed="0.002169"/>
+</test>
+<test id="s1-s1-t4" name="Fourth TC" line="34">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.476465" elapsed="0.000086"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${var}==6</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.476604" elapsed="0.000123"/>
+</kw>
+<var name="${var}">1</var>
+<status status="PASS" start="2024-08-29T22:01:01.476412" elapsed="0.000340"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.476842" elapsed="0.000073"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${var}==6</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.476962" elapsed="0.000091"/>
+</kw>
+<var name="${var}">2</var>
+<status status="PASS" start="2024-08-29T22:01:01.476800" elapsed="0.000277"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.477163" elapsed="0.000071"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${var}==6</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.477278" elapsed="0.000084"/>
+</kw>
+<var name="${var}">3</var>
+<status status="PASS" start="2024-08-29T22:01:01.477123" elapsed="0.000263"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.477466" elapsed="0.000072"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${var}==6</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.477581" elapsed="0.000087"/>
+</kw>
+<var name="${var}">4</var>
+<status status="PASS" start="2024-08-29T22:01:01.477428" elapsed="0.000263"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.477774" elapsed="0.000069"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${var}==6</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.477884" elapsed="0.001136"/>
+</kw>
+<var name="${var}">5</var>
+<status status="PASS" start="2024-08-29T22:01:01.477735" elapsed="0.001746"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.479750" elapsed="0.000105"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-08-29T22:01:01.480013" level="INFO">Exiting for loop altogether.</msg>
+<arg>${var}==6</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.479913" elapsed="0.000143"/>
+</kw>
+<var name="${var}">6</var>
+<status status="PASS" start="2024-08-29T22:01:01.479682" elapsed="0.000401"/>
+</iter>
+<var>${var}</var>
+<value>@{List_Numbers}</value>
+<status status="PASS" start="2024-08-29T22:01:01.476333" elapsed="0.003775"/>
+</for>
+<status status="PASS" start="2024-08-29T22:01:01.475698" elapsed="0.004556"/>
+</test>
+<test id="s1-s1-t5" name="Fifth TC Timer" line="40">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.480613" elapsed="0.000076"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.480733" elapsed="0.000086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:02.481093" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.480861" elapsed="1.000310"/>
+</kw>
+<var name="${counter}">10</var>
+<status status="PASS" start="2024-08-29T22:01:01.480569" elapsed="1.000654"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:02.481428" elapsed="0.000139"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:02.481620" elapsed="0.000123"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:03.482367" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:02.481790" elapsed="1.000646"/>
+</kw>
+<var name="${counter}">9</var>
+<status status="PASS" start="2024-08-29T22:01:02.481320" elapsed="1.001174"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:03.482690" elapsed="0.000152"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:03.482893" elapsed="0.000116"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:04.484991" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:03.483053" elapsed="1.002017"/>
+</kw>
+<var name="${counter}">8</var>
+<status status="PASS" start="2024-08-29T22:01:03.482585" elapsed="1.002536"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:04.485317" elapsed="0.000201"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:04.485599" elapsed="0.000140"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:05.486978" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:04.485790" elapsed="1.001268"/>
+</kw>
+<var name="${counter}">7</var>
+<status status="PASS" start="2024-08-29T22:01:04.485218" elapsed="1.001888"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:05.487309" elapsed="0.000203"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:05.487570" elapsed="0.000298"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:06.490418" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:05.487921" elapsed="1.002796"/>
+</kw>
+<var name="${counter}">6</var>
+<status status="PASS" start="2024-08-29T22:01:05.487206" elapsed="1.003636"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:06.491240" elapsed="0.000195"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:06.491498" elapsed="0.000152"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:07.492720" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:06.491699" elapsed="1.001115"/>
+</kw>
+<var name="${counter}">5</var>
+<status status="PASS" start="2024-08-29T22:01:06.491019" elapsed="1.001845"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:07.493089" elapsed="0.000148"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:07.493294" elapsed="0.000132"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:08.495085" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:07.493471" elapsed="1.001733"/>
+</kw>
+<var name="${counter}">4</var>
+<status status="PASS" start="2024-08-29T22:01:07.492965" elapsed="1.002310"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:08.495508" elapsed="0.000304"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:08.495885" elapsed="0.000175"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:09.498010" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:08.496109" elapsed="1.002163"/>
+</kw>
+<var name="${counter}">3</var>
+<status status="PASS" start="2024-08-29T22:01:08.495390" elapsed="1.003013"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.498957" elapsed="0.000211"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.499232" elapsed="0.000170"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:10.502013" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.499450" elapsed="1.002643"/>
+</kw>
+<var name="${counter}">2</var>
+<status status="PASS" start="2024-08-29T22:01:09.498679" elapsed="1.003496"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.502406" elapsed="0.000164"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${counter}==0</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.502758" elapsed="0.000176"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-29T22:01:11.504114" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.503054" elapsed="1.001552"/>
+</kw>
+<var name="${counter}">1</var>
+<status status="PASS" start="2024-08-29T22:01:10.502289" elapsed="1.002380"/>
+</iter>
+<var>${counter}</var>
+<value>10</value>
+<value>0</value>
+<value>-1</value>
+<status status="PASS" start="2024-08-29T22:01:01.480484" elapsed="10.024234"/>
+</for>
+<status status="PASS" start="2024-08-29T22:01:01.480363" elapsed="10.024523"/>
+</test>
+<doc>My First Test suite for Robot framework
+This is Conitnued documnetation</doc>
+<status status="PASS" start="2024-08-29T22:01:01.382169" elapsed="10.123178"/>
+</suite>
+<status status="PASS" start="2024-08-29T22:01:01.375135" elapsed="10.130791"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="1" id="s1" name="Tests">Tests</stat>
+<stat pass="4" fail="0" skip="1" id="s1-s1" name="Suite3">Tests.Suite3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

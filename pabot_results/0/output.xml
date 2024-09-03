@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-08-29T22:01:01.369462" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests">
+<suite id="s1-s1" name="Suite1" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite1.robot">
+<test id="s1-s1-t1" name="Login with valid credentials" line="24">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:01.471552" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471433" elapsed="0.000151"/>
+</kw>
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2024-08-29T22:01:01.471744" level="INFO">Set test documentation to:
+doc TC1</msg>
+<arg>doc TC1</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471659" elapsed="0.000107"/>
+</kw>
+<kw name="Navigate to Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:01.472149" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${PAGEURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T22:01:01.472021" elapsed="7.310219"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T22:01:08.783204" elapsed="0.477259"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:01.471870" elapsed="7.788786"/>
+</kw>
+<kw name="Login to Website">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:09.261649" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id="user-name"]'.</msg>
+<arg>xpath://input[@id="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.261308" elapsed="0.238949"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:09.500639" level="INFO">Typing text 'secret_sauce' into text field 'xpath://input[@id="password"]'.</msg>
+<arg>xpath://input[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.500396" elapsed="0.083246"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:09.584002" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
+<arg>xpath://input[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.583805" elapsed="0.304917"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-08-29T22:01:09.260941" elapsed="0.627867"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:09.888894" elapsed="0.771716"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:10.660923" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.660773" elapsed="0.000178"/>
+</kw>
+<doc>doc TC1</doc>
+<status status="PASS" start="2024-08-29T22:01:01.471004" elapsed="9.190030"/>
+</test>
+<test id="s1-s1-t2" name="Login with invalid credentials" line="32">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:10.661638" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.661580" elapsed="0.000086"/>
+</kw>
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2024-08-29T22:01:10.661776" level="INFO">Set test documentation to:
+doc TC1</msg>
+<arg>doc TC1</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.661712" elapsed="0.000083"/>
+</kw>
+<kw name="Navigate to Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:10.662098" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${PAGEURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T22:01:10.661982" elapsed="4.202532"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T22:01:14.864992" elapsed="0.478736"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:10.661869" elapsed="4.682035"/>
+</kw>
+<kw name="Login to Website">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:15.344528" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id="user-name"]'.</msg>
+<arg>xpath://input[@id="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:15.344375" elapsed="0.117716"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:15.462385" level="INFO">Typing text 'bhu' into text field 'xpath://input[@id="password"]'.</msg>
+<arg>xpath://input[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:15.462214" elapsed="0.016248"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:15.478738" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
+<arg>xpath://input[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:15.478592" elapsed="0.247501"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>bhu</arg>
+<status status="PASS" start="2024-08-29T22:01:15.344103" elapsed="0.382131"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<arg>xpath://div[@class='error-message-container error'] | Msg</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:15.726378" elapsed="0.004400"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//div[@class='error-message-container error']</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-08-29T22:01:15.730963" elapsed="0.027321"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:15.758426" elapsed="0.723838"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:16.482508" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:16.482384" elapsed="0.000148"/>
+</kw>
+<doc>doc TC1</doc>
+<status status="PASS" start="2024-08-29T22:01:10.661397" elapsed="5.821220"/>
+</test>
+<test id="s1-s1-t3" name="Login with invalid empty password" line="42">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:16.483184" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:16.483129" elapsed="0.000075"/>
+</kw>
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2024-08-29T22:01:16.483310" level="INFO">Set test documentation to:
+doc TC1</msg>
+<arg>doc TC1</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2024-08-29T22:01:16.483249" elapsed="0.000079"/>
+</kw>
+<kw name="Navigate to Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:16.483615" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${PAGEURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T22:01:16.483515" elapsed="3.576052"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.059876" elapsed="0.474861"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:16.483402" elapsed="4.051440"/>
+</kw>
+<kw name="Login to Website">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:20.535657" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id="user-name"]'.</msg>
+<arg>xpath://input[@id="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.535515" elapsed="0.116921"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:20.652729" level="INFO">Typing text '' into text field 'xpath://input[@id="password"]'.</msg>
+<arg>xpath://input[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.652552" elapsed="0.013318"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:20.666166" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
+<arg>xpath://input[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.666011" elapsed="0.238515"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2024-08-29T22:01:20.535000" elapsed="0.369652"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<arg>xpath://div[@class='error-message-container error'] | Msg</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.904780" elapsed="0.003847"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//div[@class='error-message-container error']</arg>
+<arg>Epic sadface: Password is required</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.908771" elapsed="0.023756"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:20.932814" elapsed="0.718443"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:21.651532" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:21.651403" elapsed="0.000155"/>
+</kw>
+<doc>doc TC1</doc>
+<status status="PASS" start="2024-08-29T22:01:16.482957" elapsed="5.168688"/>
+</test>
+<test id="s1-s1-t4" name="Login with invalid empty username" line="52">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:21.652349" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:21.652277" elapsed="0.000097"/>
+</kw>
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2024-08-29T22:01:21.652500" level="INFO">Set test documentation to:
+doc TC1</msg>
+<arg>doc TC1</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2024-08-29T22:01:21.652428" elapsed="0.000095"/>
+</kw>
+<kw name="Navigate to Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:21.652853" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${PAGEURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T22:01:21.652737" elapsed="3.529071"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T22:01:25.182155" elapsed="0.486002"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:21.652602" elapsed="4.015668"/>
+</kw>
+<kw name="Login to Website">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:25.669200" level="INFO">Typing text '' into text field 'xpath://input[@id="user-name"]'.</msg>
+<arg>xpath://input[@id="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:25.669025" elapsed="0.066630"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:25.735914" level="INFO">Typing text 'Password' into text field 'xpath://input[@id="password"]'.</msg>
+<arg>xpath://input[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:25.735758" elapsed="0.043325"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:25.779379" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
+<arg>xpath://input[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:25.779218" elapsed="0.236073"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>Password</arg>
+<status status="PASS" start="2024-08-29T22:01:25.668433" elapsed="0.347087"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<arg>xpath://div[@class='error-message-container error'] | Msg</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.015704" elapsed="0.004755"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//div[@class='error-message-container error']</arg>
+<arg>Epic sadface: Username is required</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.020611" elapsed="0.023245"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.043977" elapsed="0.713271"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:26.757524" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.757384" elapsed="0.000168"/>
+</kw>
+<doc>doc TC1</doc>
+<status status="PASS" start="2024-08-29T22:01:21.652082" elapsed="5.105562"/>
+</test>
+<test id="s1-s1-t5" name="Login and Add Product to cart" line="63">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:26.758094" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.758022" elapsed="0.000096"/>
+</kw>
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2024-08-29T22:01:26.758242" level="INFO">Set test documentation to:
+doc TC1</msg>
+<arg>doc TC1</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.758169" elapsed="0.000094"/>
+</kw>
+<kw name="Navigate to Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:26.758581" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${PAGEURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T22:01:26.758470" elapsed="3.519552"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T22:01:30.278310" elapsed="0.472637"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:26.758343" elapsed="3.992705"/>
+</kw>
+<kw name="Login to Website">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:30.751576" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id="user-name"]'.</msg>
+<arg>xpath://input[@id="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:30.751438" elapsed="0.120057"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:30.871795" level="INFO">Typing text 'secret_sauce' into text field 'xpath://input[@id="password"]'.</msg>
+<arg>xpath://input[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:30.871603" elapsed="0.037405"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:30.909265" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
+<arg>xpath://input[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:30.909125" elapsed="0.269793"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-08-29T22:01:30.751189" elapsed="0.427849"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//span[text()='Products']</arg>
+<arg>Products</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-08-29T22:01:31.179174" elapsed="0.016665"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:31.196163" level="INFO">Clicking element 'xpath://div[text()='Sauce Labs Backpack']'.</msg>
+<arg>xpath://div[text()='Sauce Labs Backpack']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:31.195981" elapsed="0.226376"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-29T22:01:31.422919" level="INFO">Clicking element 'xpath://button[@id='add-to-cart']'.</msg>
+<arg>xpath://button[@id='add-to-cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T22:01:31.422606" elapsed="0.221324"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//button[@id='remove']</arg>
+<arg>Remove</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-08-29T22:01:31.644042" elapsed="0.008775"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T22:01:31.652934" elapsed="0.614841"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:32.268024" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:32.267902" elapsed="0.000146"/>
+</kw>
+<doc>doc TC1</doc>
+<tag>robot:continue-on-failure</tag>
+<status status="PASS" start="2024-08-29T22:01:26.757828" elapsed="5.510300"/>
+</test>
+<test id="s1-s1-t6" name="Second test Cases" line="75">
+<tag>robot:skip</tag>
+<status status="SKIP" start="2024-08-29T22:01:32.268306" elapsed="0.000273">Test skipped using 'robot:skip' tag.</status>
+</test>
+<test id="s1-s1-t7" name="Third Test Cases" line="79">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:32.268850" level="INFO">Great to know yourself</msg>
+<arg>Great to know yourself</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:32.268790" elapsed="0.000083"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-29T22:01:32.268963" level="INFO">message</msg>
+<arg>message</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-29T22:01:32.268919" elapsed="0.000064"/>
+</kw>
+<status status="PASS" start="2024-08-29T22:01:32.268674" elapsed="0.000353"/>
+</test>
+<doc>My First Test suite for Robot framework
+This is Conitnued documnetation</doc>
+<status status="PASS" start="2024-08-29T22:01:01.382181" elapsed="30.886982"/>
+</suite>
+<status status="PASS" start="2024-08-29T22:01:01.375108" elapsed="30.894386"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="1" id="s1" name="Tests">Tests</stat>
+<stat pass="6" fail="0" skip="1" id="s1-s1" name="Suite1">Tests.Suite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

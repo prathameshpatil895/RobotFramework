@@ -1,0 +1,27 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Suite1 :: My First Test suite for Robot framework This is Conitnued d...
+==============================================================================
+Login with valid credentials                                          | PASS |
+------------------------------------------------------------------------------
+Login with invalid credentials                                        | PASS |
+------------------------------------------------------------------------------
+Login with invalid empty password                                     | PASS |
+------------------------------------------------------------------------------
+Login with invalid empty username                                     | PASS |
+------------------------------------------------------------------------------
+Login and Add Product to cart                                         | PASS |
+------------------------------------------------------------------------------
+Second test Cases                                                     | SKIP |
+Test skipped using 'robot:skip' tag.
+------------------------------------------------------------------------------
+Third Test Cases                                                      | PASS |
+------------------------------------------------------------------------------
+Tests.Suite1 :: My First Test suite for Robot framework This is Co... | PASS |
+7 tests, 6 passed, 0 failed, 1 skipped
+==============================================================================
+Tests                                                                 | PASS |
+7 tests, 6 passed, 0 failed, 1 skipped
+==============================================================================
+Output:  /Users/prathameshpatil/Desktop/Test folder/RobotFramework/pabot_results/0/output.xml
