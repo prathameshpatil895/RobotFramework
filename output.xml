@@ -1,663 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-09-05T17:45:34.142274" rpa="false" schemaversion="5">
-<suite id="s1" name="Suite2" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite2.robot">
-<test id="s1-t1" name="Sign Up with valid credentials" line="21">
+<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-09-05T18:00:47.753275" rpa="false" schemaversion="5">
+<suite id="s1" name="Suite1" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite1.robot">
+<test id="s1-t1" name="Login with invalid credentials" line="22">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-05T18:00:47.890320" level="INFO">Test start</msg>
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-05T18:00:47.890184" elapsed="0.001369"/>
+</kw>
 <kw name="Set Test Documentation" owner="BuiltIn">
-<msg time="2024-09-05T17:45:34.276218" level="INFO">Set test documentation to:
+<msg time="2024-09-05T18:00:47.891915" level="INFO">Set test documentation to:
 doc TC1</msg>
 <arg>doc TC1</arg>
 <doc>Sets documentation for the current test case.</doc>
-<status status="PASS" start="2024-09-05T17:45:34.276060" elapsed="0.001226"/>
+<status status="PASS" start="2024-09-05T18:00:47.891752" elapsed="0.000230"/>
 </kw>
 <kw name="Navigate to Website" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:34.278012" level="INFO">Opening browser 'firefox' to base url 'https://conduit.realworld.how/'.</msg>
+<msg time="2024-09-05T18:00:47.892636" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-05T17:45:34.277831" elapsed="9.284016"/>
+<status status="PASS" start="2024-09-05T18:00:47.892394" elapsed="7.599922"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-05T17:45:43.563851" elapsed="0.492630"/>
+<status status="PASS" start="2024-09-05T18:00:55.494725" elapsed="0.497223"/>
 </kw>
 <arg>${PAGEURL}</arg>
 <arg>${BROWSER}</arg>
-<status status="PASS" start="2024-09-05T17:45:34.277541" elapsed="9.779298"/>
+<status status="PASS" start="2024-09-05T18:00:47.892154" elapsed="8.099970"/>
 </kw>
-<kw name="Sign Up to Website" owner="Keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:44.059551" level="INFO">Clicking element '//a[text()=' Sign up ']'.</msg>
-<arg>//a[text()=' Sign up ']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.059026" elapsed="0.321403"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath://input[@placeholder="Username"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.380833" elapsed="0.037011"/>
-</kw>
+<kw name="Login to Website" owner="Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:44.418617" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@placeholder="Username"]'.</msg>
-<arg>xpath://input[@placeholder="Username"]</arg>
+<msg time="2024-09-05T18:00:55.994335" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id="user-name"]'.</msg>
+<arg>xpath://input[@id="user-name"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.418283" elapsed="0.098846"/>
+<status status="PASS" start="2024-09-05T18:00:55.993846" elapsed="0.166408"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:44.517484" level="INFO">Typing text 'test456@testu.ai' into text field 'xpath://input[@placeholder="Email"]'.</msg>
-<arg>xpath://input[@placeholder="Email"]</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.517296" elapsed="0.032764"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:44.550411" level="INFO">Typing text 'secret_sauce' into text field 'xpath://input[@placeholder="Password"]'.</msg>
-<arg>xpath://input[@placeholder="Password"]</arg>
+<msg time="2024-09-05T18:00:56.160754" level="INFO">Typing text 'bhu' into text field 'xpath://input[@id="password"]'.</msg>
+<arg>xpath://input[@id="password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.550232" elapsed="0.016698"/>
+<status status="PASS" start="2024-09-05T18:00:56.160524" elapsed="0.030044"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:44.567258" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
-<arg>xpath://button[@type='submit']</arg>
+<msg time="2024-09-05T18:00:56.190952" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
+<arg>xpath://input[@id="login-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.567093" elapsed="0.228457"/>
+<status status="PASS" start="2024-09-05T18:00:56.190762" elapsed="0.251363"/>
 </kw>
 <arg>${USERNAME}</arg>
-<arg>${EMAIL}</arg>
-<arg>${PASSWORD}</arg>
-<status status="PASS" start="2024-09-05T17:45:44.057672" elapsed="0.738039"/>
+<arg>bhu</arg>
+<status status="PASS" start="2024-09-05T18:00:55.992782" elapsed="0.449641"/>
 </kw>
-<kw name="Get Window Titles" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:44.812040" level="INFO">Altogether 1 item.
-1: Conduit</msg>
-<doc>Returns and logs titles of all windows of the selected browser.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.796018" elapsed="0.016227"/>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<arg>xpath://div[@class='error-message-container error'] | Msg</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-09-05T18:00:56.442933" elapsed="0.005630"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//div[@class='error-message-container error']</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-09-05T18:00:56.449045" elapsed="0.030429"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-05T17:45:44.812544" elapsed="0.803807"/>
+<status status="PASS" start="2024-09-05T18:00:56.479729" elapsed="0.614749"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-05T18:00:57.094981" level="INFO">Test end</msg>
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-05T18:00:57.094773" elapsed="0.000303"/>
 </kw>
 <doc>doc TC1</doc>
-<status status="PASS" start="2024-09-05T17:45:34.275575" elapsed="11.341087"/>
-</test>
-<test id="s1-t2" name="Cypress ToDo App - Add an item" line="30">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>----Test Start----</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:45:45.617315" elapsed="0.000201"/>
-</kw>
-<kw name="Navigate to Website" owner="Keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:45.618109" level="INFO">Opening browser 'firefox' to base url 'https://example.cypress.io/todo'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-05T17:45:45.617966" elapsed="5.838370"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-05T17:45:51.458564" elapsed="0.488225"/>
-</kw>
-<arg>${WEBPAGE}</arg>
-<arg>firefox</arg>
-<status status="PASS" start="2024-09-05T17:45:45.617749" elapsed="6.329290"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:51.975853" level="INFO">Current page contains text 'todos'.</msg>
-<arg>todos</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:45:51.947312" elapsed="0.030726"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:51.979500" level="INFO">Verifying element '//h1' contains exact text 'todos'.</msg>
-<arg>//h1</arg>
-<arg>todos</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-09-05T17:45:51.978674" elapsed="0.020879"/>
-</kw>
-<kw name="Add a New ToDo" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:52.002146" level="INFO">Typing text 'Book' into text field 'xpath://input[@class='new-todo']'.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>${item}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:52.001967" elapsed="0.038517"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:52.043626" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@class='new-todo'] element.</msg>
-<msg time="2024-09-05T17:45:52.333305" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-09-05T17:45:52.333507" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-05T17:45:52.040672" elapsed="0.319132"/>
-</kw>
-<arg>Book</arg>
-<status status="PASS" start="2024-09-05T17:45:52.001042" elapsed="0.358915"/>
-</kw>
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>//h1</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:45:52.360120" elapsed="0.025842"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-05T17:45:54.387300" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-05T17:45:52.386303" elapsed="2.001310"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-05T17:45:54.388094" elapsed="0.665942"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>----Test End----</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:45:55.054492" elapsed="0.000280"/>
-</kw>
-<status status="PASS" start="2024-09-05T17:45:45.617004" elapsed="9.437946"/>
-</test>
-<test id="s1-t3" name="Cypress ToDo App - Remove an item" line="41">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>----Test Start----</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:45:55.055877" elapsed="0.000136"/>
-</kw>
-<kw name="Navigate to Website" owner="Keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:45:55.056628" level="INFO">Opening browser 'firefox' to base url 'https://example.cypress.io/todo'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-05T17:45:55.056470" elapsed="5.828102"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-05T17:46:00.886719" elapsed="0.497460"/>
-</kw>
-<arg>${WEBPAGE}</arg>
-<arg>${BROWSER}</arg>
-<status status="PASS" start="2024-09-05T17:45:55.056235" elapsed="6.328184"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:01.409923" level="INFO">Current page contains text 'todos'.</msg>
-<arg>todos</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:46:01.384889" elapsed="0.025398"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:01.410921" level="INFO">Verifying element '//h1' contains exact text 'todos'.</msg>
-<arg>//h1</arg>
-<arg>todos</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-09-05T17:46:01.410572" elapsed="0.023440"/>
-</kw>
-<kw name="Add a New ToDo" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:01.436574" level="INFO">Typing text 'Book' into text field 'xpath://input[@class='new-todo']'.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>${item}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:01.436041" elapsed="0.042180"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:01.481401" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@class='new-todo'] element.</msg>
-<msg time="2024-09-05T17:46:01.765184" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-09-05T17:46:01.765325" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:01.478410" elapsed="0.297157"/>
-</kw>
-<arg>Book</arg>
-<status status="PASS" start="2024-09-05T17:46:01.434992" elapsed="0.340721"/>
-</kw>
-<kw name="Remove a ToDo" owner="Keywords">
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:01.776367" level="INFO">Selecting checkbox '//label[text()='Book']/preceding-sibling::input[@type='checkbox']'.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:01.776195" elapsed="0.234655"/>
-</kw>
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:02.011300" level="INFO">Verifying checkbox '//label[text()='Book']/preceding-sibling::input[@type='checkbox']' is selected.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-09-05T17:46:02.011040" elapsed="0.014078"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[text()='Clear completed']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-05T17:46:02.025276" elapsed="0.009363"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:02.034947" level="INFO">Clicking button '//button[text()='Clear completed']'.</msg>
-<arg>//button[text()='Clear completed']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:02.034796" elapsed="0.219010"/>
-</kw>
-<arg>Book</arg>
-<status status="PASS" start="2024-09-05T17:46:01.775949" elapsed="0.478287"/>
-</kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:02.260720" level="INFO">${cnt} = 2</msg>
-<var>${cnt}</var>
-<arg>//input[@type='checkbox' and @class='toggle']</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:02.254759" elapsed="0.006229"/>
-</kw>
-<kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2024-09-05T17:46:02.261887" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${cnt}</arg>
-<arg>2</arg>
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2024-09-05T17:46:02.261420" elapsed="0.000702"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-05T17:46:04.264161" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-05T17:46:02.262582" elapsed="2.002405"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:04.265811" elapsed="0.695364"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>----Test End----</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:04.961447" elapsed="0.000270"/>
-</kw>
-<status status="PASS" start="2024-09-05T17:45:55.055420" elapsed="9.906534"/>
-</test>
-<test id="s1-t4" name="Cypress ToDo App - Add and Remove an item" line="55">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>----Test Start----</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:04.962569" elapsed="0.000225"/>
-</kw>
-<kw name="Navigate to Website" owner="Keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:04.963379" level="INFO">Opening browser 'firefox' to base url 'https://example.cypress.io/todo'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-05T17:46:04.963215" elapsed="5.316126"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-05T17:46:10.281257" elapsed="0.475314"/>
-</kw>
-<arg>${WEBPAGE}</arg>
-<arg>${BROWSER}</arg>
-<status status="PASS" start="2024-09-05T17:46:04.962975" elapsed="5.793821"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:10.783286" level="INFO">Current page contains text 'todos'.</msg>
-<arg>todos</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:46:10.757242" elapsed="0.026377"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:10.784185" level="INFO">Verifying element '//h1' contains exact text 'todos'.</msg>
-<arg>//h1</arg>
-<arg>todos</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-09-05T17:46:10.783875" elapsed="0.018112"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:10.803668" elapsed="0.000211"/>
-</kw>
-<kw name="Add a New ToDo" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:10.804484" level="INFO">Typing text 'Books' into text field 'xpath://input[@class='new-todo']'.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>${item}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:10.804331" elapsed="0.036524"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:10.844452" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@class='new-todo'] element.</msg>
-<msg time="2024-09-05T17:46:11.137122" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-09-05T17:46:11.137267" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:10.841323" elapsed="0.306487"/>
-</kw>
-<arg>${element}</arg>
-<status status="PASS" start="2024-09-05T17:46:10.804088" elapsed="0.343850"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.152581" level="INFO">Current page contains text 'Books'.</msg>
-<arg>${element}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.148042" elapsed="0.004701"/>
-</kw>
-<var name="${element}">Books</var>
-<status status="PASS" start="2024-09-05T17:46:10.803496" elapsed="0.349321"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.153058" elapsed="0.000152"/>
-</kw>
-<kw name="Add a New ToDo" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.153633" level="INFO">Typing text 'Cleaning' into text field 'xpath://input[@class='new-todo']'.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>${item}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.153492" elapsed="0.011038"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.164986" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@class='new-todo'] element.</msg>
-<msg time="2024-09-05T17:46:11.434978" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-09-05T17:46:11.435275" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.164717" elapsed="0.282437"/>
-</kw>
-<arg>${element}</arg>
-<status status="PASS" start="2024-09-05T17:46:11.153321" elapsed="0.294075"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.454179" level="INFO">Current page contains text 'Cleaning'.</msg>
-<arg>${element}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.447598" elapsed="0.006823"/>
-</kw>
-<var name="${element}">Cleaning</var>
-<status status="PASS" start="2024-09-05T17:46:11.152943" elapsed="0.301588"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.454893" elapsed="0.000303"/>
-</kw>
-<kw name="Add a New ToDo" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.456005" level="INFO">Typing text 'Groceries' into text field 'xpath://input[@class='new-todo']'.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>${item}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.455765" elapsed="0.019425"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.475910" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@class='new-todo'] element.</msg>
-<msg time="2024-09-05T17:46:11.756085" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-09-05T17:46:11.756357" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.475532" elapsed="0.289184"/>
-</kw>
-<arg>${element}</arg>
-<status status="PASS" start="2024-09-05T17:46:11.455434" elapsed="0.309511"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.772147" level="INFO">Current page contains text 'Groceries'.</msg>
-<arg>${element}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.765144" elapsed="0.007240"/>
-</kw>
-<var name="${element}">Groceries</var>
-<status status="PASS" start="2024-09-05T17:46:11.454712" elapsed="0.317788"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.772882" elapsed="0.000307"/>
-</kw>
-<kw name="Add a New ToDo" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.773991" level="INFO">Typing text 'Job' into text field 'xpath://input[@class='new-todo']'.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>${item}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.773726" elapsed="0.010984"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:11.785304" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@class='new-todo'] element.</msg>
-<msg time="2024-09-05T17:46:12.050415" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-09-05T17:46:12.050693" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath://input[@class='new-todo']</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:11.784937" elapsed="0.277251"/>
-</kw>
-<arg>${element}</arg>
-<status status="PASS" start="2024-09-05T17:46:11.773404" elapsed="0.289006"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.069365" level="INFO">Current page contains text 'Job'.</msg>
-<arg>${element}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.062609" elapsed="0.007041"/>
-</kw>
-<var name="${element}">Job</var>
-<status status="PASS" start="2024-09-05T17:46:11.772703" elapsed="0.297064"/>
-</iter>
-<var>${element}</var>
-<value>@{List_Items}</value>
-<status status="PASS" start="2024-09-05T17:46:10.802262" elapsed="1.267603"/>
-</for>
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.074652" level="INFO">${ele} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="4d8dd269-1df0-4ba1-9391-228ce4a38430", element="f50ae7d7-23ee-4529-9cae-7a8e67cc9551")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (s...</msg>
-<var>${ele}</var>
-<arg>//input[@type='checkbox' and @class='toggle']</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.070237" elapsed="0.004605"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2024-09-05T17:46:12.075536" level="INFO">Length is 6.</msg>
-<msg time="2024-09-05T17:46:12.075687" level="INFO">${cnt} = 6</msg>
-<var>${cnt}</var>
-<arg>${ele}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.075226" elapsed="0.000540"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${cnt}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.075952" elapsed="0.000197"/>
-</kw>
-<kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2024-09-05T17:46:12.076730" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${cnt}</arg>
-<arg>6</arg>
-<doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.076459" elapsed="0.000404"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Remove a ToDo" owner="Keywords">
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.077893" level="INFO">Selecting checkbox '//label[text()='Books']/preceding-sibling::input[@type='checkbox']'.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.077678" elapsed="0.240605"/>
-</kw>
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.318779" level="INFO">Verifying checkbox '//label[text()='Books']/preceding-sibling::input[@type='checkbox']' is selected.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.318509" elapsed="0.019992"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[text()='Clear completed']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.338698" elapsed="0.010129"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.349152" level="INFO">Clicking button '//button[text()='Clear completed']'.</msg>
-<arg>//button[text()='Clear completed']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.348995" elapsed="0.219328"/>
-</kw>
-<arg>${var}</arg>
-<status status="PASS" start="2024-09-05T17:46:12.077421" elapsed="0.491115"/>
-</kw>
-<var name="${var}">Books</var>
-<status status="PASS" start="2024-09-05T17:46:12.077266" elapsed="0.491353"/>
-</iter>
-<iter>
-<kw name="Remove a ToDo" owner="Keywords">
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.569598" level="INFO">Selecting checkbox '//label[text()='Cleaning']/preceding-sibling::input[@type='checkbox']'.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.569331" elapsed="0.230734"/>
-</kw>
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.800653" level="INFO">Verifying checkbox '//label[text()='Cleaning']/preceding-sibling::input[@type='checkbox']' is selected.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.800336" elapsed="0.018715"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[text()='Clear completed']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.819283" elapsed="0.011698"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:12.831336" level="INFO">Clicking button '//button[text()='Clear completed']'.</msg>
-<arg>//button[text()='Clear completed']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:12.831167" elapsed="0.221267"/>
-</kw>
-<arg>${var}</arg>
-<status status="PASS" start="2024-09-05T17:46:12.569003" elapsed="0.483755"/>
-</kw>
-<var name="${var}">Cleaning</var>
-<status status="PASS" start="2024-09-05T17:46:12.568795" elapsed="0.484079"/>
-</iter>
-<iter>
-<kw name="Remove a ToDo" owner="Keywords">
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:13.054051" level="INFO">Selecting checkbox '//label[text()='Groceries']/preceding-sibling::input[@type='checkbox']'.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.053766" elapsed="0.232205"/>
-</kw>
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:13.286697" level="INFO">Verifying checkbox '//label[text()='Groceries']/preceding-sibling::input[@type='checkbox']' is selected.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.286308" elapsed="0.022917"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[text()='Clear completed']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.309474" elapsed="0.013837"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:13.323757" level="INFO">Clicking button '//button[text()='Clear completed']'.</msg>
-<arg>//button[text()='Clear completed']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.323528" elapsed="0.218779"/>
-</kw>
-<arg>${var}</arg>
-<status status="PASS" start="2024-09-05T17:46:13.053389" elapsed="0.489187"/>
-</kw>
-<var name="${var}">Groceries</var>
-<status status="PASS" start="2024-09-05T17:46:13.053101" elapsed="0.489593"/>
-</iter>
-<iter>
-<kw name="Remove a ToDo" owner="Keywords">
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:13.543975" level="INFO">Selecting checkbox '//label[text()='Job']/preceding-sibling::input[@type='checkbox']'.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.543651" elapsed="0.234382"/>
-</kw>
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:13.778699" level="INFO">Verifying checkbox '//label[text()='Job']/preceding-sibling::input[@type='checkbox']' is selected.</msg>
-<arg>//label[text()='${item}']/preceding-sibling::input[@type='checkbox']</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.778353" elapsed="0.037156"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[text()='Clear completed']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.815701" elapsed="0.012707"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-05T17:46:13.828836" level="INFO">Clicking button '//button[text()='Clear completed']'.</msg>
-<arg>//button[text()='Clear completed']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T17:46:13.828684" elapsed="0.215538"/>
-</kw>
-<arg>${var}</arg>
-<status status="PASS" start="2024-09-05T17:46:13.543212" elapsed="0.501285"/>
-</kw>
-<var name="${var}">Job</var>
-<status status="PASS" start="2024-09-05T17:46:13.542932" elapsed="0.501684"/>
-</iter>
-<var>${var}</var>
-<value>@{List_Items}</value>
-<status status="PASS" start="2024-09-05T17:46:12.077085" elapsed="1.967658"/>
-</for>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-05T17:46:16.047079" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-05T17:46:14.045195" elapsed="2.002034"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-05T17:46:16.047444" elapsed="0.634509"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>----Test End----</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:16.682208" elapsed="0.000171"/>
-</kw>
-<status status="PASS" start="2024-09-05T17:46:04.962297" elapsed="11.720389"/>
-</test>
-<test id="s1-t5" name="Second test Cases" line="77">
-<tag>robot:skip</tag>
-<status status="SKIP" start="2024-09-05T17:46:16.682969" elapsed="0.000382">Test skipped using 'robot:skip' tag.</status>
-</test>
-<test id="s1-t6" name="Third Test Cases" line="81">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Great to know yourself</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:16.683892" elapsed="0.000190"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>message</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-05T17:46:16.684225" elapsed="0.000120"/>
-</kw>
-<status status="PASS" start="2024-09-05T17:46:16.683546" elapsed="0.001113"/>
+<status status="PASS" start="2024-09-05T18:00:47.889722" elapsed="9.205532"/>
 </test>
 <doc>My First Test suite for Robot framework
 This is Conitnued documnetation</doc>
-<status status="PASS" start="2024-09-05T17:45:34.145610" elapsed="42.539280"/>
+<status status="PASS" start="2024-09-05T18:00:47.757111" elapsed="9.338674"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="1">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="1" id="s1" name="Suite2">Suite2</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suite1">Suite1</stat>
 </suite>
 </statistics>
 <errors>

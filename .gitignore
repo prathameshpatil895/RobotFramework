@@ -1,4 +1,7 @@
 #files to ignore
+log.html
+report.html
+output.xml
 *.log
 *.html
 *.xml
