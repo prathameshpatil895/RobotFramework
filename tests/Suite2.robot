@@ -4,6 +4,7 @@ Documentation    My First Test suite for Robot framework
 Library    SeleniumLibrary
 Library    Screenshot    ./lib
 
+
 *** Variables ***
 ${PAGEURL}    https://conduit.realworld.how/
 ${WEBPAGE}    https://example.cypress.io/todo
@@ -39,7 +40,7 @@ Remove a ToDo
     Checkbox Should Be Selected    //label[text()='${item}']/preceding-sibling::input[@type='checkbox']
     Wait Until Element Is Visible    //button[text()='Clear completed']
     Click Button    //button[text()='Clear completed']
-
+    
 *** Test Cases ***
 
 Sign Up with valid credentials
