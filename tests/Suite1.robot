@@ -11,7 +11,6 @@ ${USERNAME}    standard_user
 ${PASSWORD}    secret_sauce
 
 *** Test Cases ***
-
 Login with valid credentials
     Log    Test start
     Set Test Documentation    doc TC1
@@ -49,7 +48,6 @@ Login with invalid empty username
     Wait Until Element Contains    //div[@class='error-message-container error']    Epic sadface: Username is required
     Close Browser
     Log    Test end
-
 
 Login and Add Product to cart
     [Tags]    robot:continue-on-failure
