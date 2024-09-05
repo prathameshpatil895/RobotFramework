@@ -1,6 +1,5 @@
-log.html
+#files to ignore
 *.log
-report.html
 *.html
 *.xml
 interactive
