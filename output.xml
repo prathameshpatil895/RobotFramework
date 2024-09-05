@@ -1,97 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-09-05T18:00:47.753275" rpa="false" schemaversion="5">
-<suite id="s1" name="Suite1" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite1.robot">
-<test id="s1-t1" name="Login with invalid credentials" line="22">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-09-05T18:00:47.890320" level="INFO">Test start</msg>
-<arg>Test start</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-05T18:00:47.890184" elapsed="0.001369"/>
+<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-09-05T21:08:38.107717" rpa="false" schemaversion="5">
+<suite id="s1" name="Suite5" source="/Users/prathameshpatil/Desktop/Test folder/RobotFramework/tests/Suite5.robot">
+<test id="s1-t1" name="Test case to test CustomDriver" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>HI</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-05T21:08:38.290930" elapsed="0.000150"/>
 </kw>
-<kw name="Set Test Documentation" owner="BuiltIn">
-<msg time="2024-09-05T18:00:47.891915" level="INFO">Set test documentation to:
-doc TC1</msg>
-<arg>doc TC1</arg>
-<doc>Sets documentation for the current test case.</doc>
-<status status="PASS" start="2024-09-05T18:00:47.891752" elapsed="0.000230"/>
+<kw name="Open Custom Chrome Driver" owner="CustomDriver">
+<msg time="2024-09-05T21:08:38.291368" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2024-09-05T21:08:38.456706" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-09-05T21:08:38.457627" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-09-05T21:08:38.457764" level="INFO">There is no [mac64] chromedriver "128.0.6613.120" for browser google-chrome "128.0.6613.120" in cache</msg>
+<msg time="2024-09-05T21:08:38.462167" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-09-05T21:08:38.550682" level="INFO">WebDriver version 128.0.6613.119 selected</msg>
+<msg time="2024-09-05T21:08:38.551508" level="INFO">Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/128.0.6613.119/mac-arm64/chromedriver-mac-arm64.zip</msg>
+<msg time="2024-09-05T21:08:38.551616" level="INFO">About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/128.0.6613.119/mac-arm64/chromedriver-mac-arm64.zip</msg>
+<msg time="2024-09-05T21:08:38.612038" level="INFO">Driver downloading response is 200</msg>
+<msg time="2024-09-05T21:08:39.817816" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-09-05T21:08:39.904044" level="INFO">Driver has been saved in cache [/Users/prathameshpatil/.wdm/drivers/chromedriver/mac64/128.0.6613.120]</msg>
+<msg time="2024-09-05T21:08:39.909057" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-05T21:08:39.909597" level="FAIL">OSError: [Errno 8] Exec format error: '/Users/prathameshpatil/.wdm/drivers/chromedriver/mac64/128.0.6613.120/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'</msg>
+<arg>https://www.google.com</arg>
+<status status="FAIL" start="2024-09-05T21:08:38.291212" elapsed="1.624286">OSError: [Errno 8] Exec format error: '/Users/prathameshpatil/.wdm/drivers/chromedriver/mac64/128.0.6613.120/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'</status>
 </kw>
-<kw name="Navigate to Website" owner="Keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-05T18:00:47.892636" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-05T18:00:47.892394" elapsed="7.599922"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-05T18:00:55.494725" elapsed="0.497223"/>
-</kw>
-<arg>${PAGEURL}</arg>
-<arg>${BROWSER}</arg>
-<status status="PASS" start="2024-09-05T18:00:47.892154" elapsed="8.099970"/>
-</kw>
-<kw name="Login to Website" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T18:00:55.994335" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id="user-name"]'.</msg>
-<arg>xpath://input[@id="user-name"]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T18:00:55.993846" elapsed="0.166408"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-05T18:00:56.160754" level="INFO">Typing text 'bhu' into text field 'xpath://input[@id="password"]'.</msg>
-<arg>xpath://input[@id="password"]</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T18:00:56.160524" elapsed="0.030044"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-05T18:00:56.190952" level="INFO">Clicking element 'xpath://input[@id="login-button"]'.</msg>
-<arg>xpath://input[@id="login-button"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-05T18:00:56.190762" elapsed="0.251363"/>
-</kw>
-<arg>${USERNAME}</arg>
-<arg>bhu</arg>
-<status status="PASS" start="2024-09-05T18:00:55.992782" elapsed="0.449641"/>
-</kw>
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<arg>xpath://div[@class='error-message-container error'] | Msg</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-09-05T18:00:56.442933" elapsed="0.005630"/>
-</kw>
-<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
-<arg>//div[@class='error-message-container error']</arg>
-<arg>Epic sadface: Username and password do not match any user in this service</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-09-05T18:00:56.449045" elapsed="0.030429"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-05T18:00:56.479729" elapsed="0.614749"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-09-05T18:00:57.094981" level="INFO">Test end</msg>
-<arg>Test end</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-05T18:00:57.094773" elapsed="0.000303"/>
-</kw>
-<doc>doc TC1</doc>
-<status status="PASS" start="2024-09-05T18:00:47.889722" elapsed="9.205532"/>
+<status status="FAIL" start="2024-09-05T21:08:38.290340" elapsed="1.625720">OSError: [Errno 8] Exec format error: '/Users/prathameshpatil/.wdm/drivers/chromedriver/mac64/128.0.6613.120/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'</status>
 </test>
-<doc>My First Test suite for Robot framework
-This is Conitnued documnetation</doc>
-<status status="PASS" start="2024-09-05T18:00:47.757111" elapsed="9.338674"/>
+<doc>Test Suite with a custom Library</doc>
+<status status="FAIL" start="2024-09-05T21:08:38.110853" elapsed="1.805710"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Suite1">Suite1</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suite5">Suite5</stat>
 </suite>
 </statistics>
 <errors>
