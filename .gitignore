@@ -1,0 +1,7 @@
+log.html
+*.log
+report.html
+*.html
+*.xml
+interactive
+pabot_results

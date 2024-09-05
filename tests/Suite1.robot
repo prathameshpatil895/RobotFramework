@@ -2,6 +2,7 @@
 Documentation    My First Test suite for Robot framework
 ...              This is Conitnued documnetation 
 Library    SeleniumLibrary
+Resource   ../resources/Keywords.resource
 
 *** Variables ***
 ${PAGEURL}    https://www.saucedemo.com/
@@ -9,22 +10,12 @@ ${BROWSER}    firefox
 ${USERNAME}    standard_user
 ${PASSWORD}    secret_sauce
 
-*** Keywords ***
-Navigate to Website
-    Open Browser    ${PAGEURL}  ${BROWSER}
-    Maximize Browser Window
-Login to Website
-    [Arguments]    ${username}     ${password}
-    Input Text    xpath://input[@id="user-name"]     ${username}
-    Input Text    xpath://input[@id="password"]    ${password}
-    Click Element    xpath://input[@id="login-button"]
-
 *** Test Cases ***
 
 Login with valid credentials
     Log    Test start
     Set Test Documentation    doc TC1
-    Navigate to Website
+    Navigate to Website    ${PAGEURL}    ${BROWSER}
     Login to Website    ${USERNAME}    ${PASSWORD}
     Close Browser
     Log    Test end
@@ -32,7 +23,7 @@ Login with valid credentials
 Login with invalid credentials
     Log    Test start
     Set Test Documentation    doc TC1
-    Navigate to Website
+    Navigate to Website    ${PAGEURL}    ${BROWSER}
     Login to Website    ${USERNAME}    bhu
     Get WebElement    xpath://div[@class='error-message-container error'] | Msg
     Wait Until Element Contains    //div[@class='error-message-container error']    Epic sadface: Username and password do not match any user in this service
@@ -42,7 +33,7 @@ Login with invalid credentials
 Login with invalid empty password
     Log    Test start
     Set Test Documentation    doc TC1
-    Navigate to Website
+    Navigate to Website    ${PAGEURL}    ${BROWSER}
     Login to Website    ${USERNAME}    ${EMPTY}
     Get WebElement    xpath://div[@class='error-message-container error'] | Msg
     Wait Until Element Contains    //div[@class='error-message-container error']    Epic sadface: Password is required
@@ -52,7 +43,7 @@ Login with invalid empty password
 Login with invalid empty username
     Log    Test start
     Set Test Documentation    doc TC1
-    Navigate to Website
+    Navigate to Website    ${PAGEURL}    ${BROWSER}
     Login to Website    ${EMPTY}    Password
     Get WebElement    xpath://div[@class='error-message-container error'] | Msg
     Wait Until Element Contains    //div[@class='error-message-container error']    Epic sadface: Username is required
@@ -64,7 +55,7 @@ Login and Add Product to cart
     [Tags]    robot:continue-on-failure
     Log    Test start
     Set Test Documentation    doc TC1
-    Navigate to Website
+    Navigate to Website    ${PAGEURL}    ${BROWSER}
     Login to Website    ${USERNAME}    ${PASSWORD}
     Wait Until Element Contains    //span[text()='Products']    Products
     Click Element    xpath://div[text()='Sauce Labs Backpack']
